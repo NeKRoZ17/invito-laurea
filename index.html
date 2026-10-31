@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="Un invito speciale per festeggiare un traguardo importante.">
+  <title>Un traguardo da festeggiare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="envelope-screen" id="envelope-screen" aria-labelledby="envelope-title">
+      <button class="envelope" id="open-invitation" type="button" aria-label="Apri la busta e leggi l'invito">
+        <span class="envelope-letter" aria-hidden="true">
+          <span class="letter-heart">♥</span>
+          <span>Un invito</span>
+          <span class="letter-script">per te</span>
+        </span>
+        <span class="envelope-base" aria-hidden="true"></span>
+        <span class="envelope-flap" aria-hidden="true"></span>
+        <span class="envelope-seal" aria-hidden="true">♥</span>
+      </button>
+      <h1 class="envelope-title" id="envelope-title">Hai ricevuto un invito speciale</h1>
+      <p class="envelope-hint">Tocca la busta per aprirla</p>
+    </section>
+
+    <div class="invitation-content" id="invitation-content" aria-hidden="true">
+    <section class="invitation" aria-labelledby="invitation-title">
+      <div class="topline">
+        <span class="topline-line" aria-hidden="true"></span>
+        <span>UN TRAGUARDO, UNA NUOVA STORIA</span>
+        <span class="topline-line" aria-hidden="true"></span>
+      </div>
+
+      <div class="laurel" aria-hidden="true">
+        <svg viewBox="0 0 120 150" fill="none">
+          <path d="M92 137C104 106 103 69 83 21" />
+          <path d="M88 118c-18-1-26-12-27-25 16 0 25 8 27 25ZM96 92c-17-2-24-13-24-26 15 1 23 10 24 26ZM93 66c-15-5-20-17-17-29 14 4 20 14 17 29ZM84 42c-12-7-15-19-9-29 12 7 15 17 9 29ZM91 108c14-8 17-21 12-33-13 7-17 19-12 33ZM92 78c13-9 14-22 8-33-12 9-14 21-8 33Z" />
+        </svg>
+        <svg viewBox="0 0 120 150" fill="none">
+          <path d="M28 137C16 106 17 69 37 21" />
+          <path d="M32 118c18-1 26-12 27-25-16 0-25 8-27 25ZM24 92c17-2 24-13 24-26-15 1-23 10-24 26ZM27 66c15-5 20-17 17-29-14 4-20 14-17 29ZM36 42c12-7 15-19 9-29-12 7-15 17-9 29ZM29 108c-14-8-17-21-12-33 13 7 17 19 12 33ZM28 78c-13-9-14-22-8-33 12 9 14 21 8 33Z" />
+        </svg>
+      </div>
+
+      <p class="eyebrow">CON IMMENSO PIACERE</p>
+      <h1 id="invitation-title">Ti invito alla mia<br><span>laurea</span></h1>
+      <div class="gold-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+      <figure class="graduate-photo">
+        <img src="WhatsApp Image 2026-10-31 at 22.29.11.jpeg" alt="Illustrazione di una laureata con corona d'alloro e pergamena">
+      </figure>
+      <p class="graduate-name">Jamaica D’Avena</p>
+
+      <div class="event-details" aria-label="Dettagli dell'evento">
+        <div class="detail">
+          <span class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"/><path d="M7.5 3.5v4M16.5 3.5v4M3.5 10h17"/></svg>
+          </span>
+          <span class="detail-label">QUANDO</span>
+          <span class="detail-value">27 novembre 2026</span>
+          <span class="detail-note">Alle 20:30</span>
+        </div>
+        <span class="detail-separator" aria-hidden="true"></span>
+        <div class="detail">
+          <span class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M19 10.2c0 5-7 10.3-7 10.3S5 15.2 5 10.2a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></svg>
+          </span>
+          <span class="detail-label">DOVE</span>
+          <span class="detail-value">Contrada Imperatore</span>
+        </div>
+      </div>
+
+      <a class="rsvp-button" href="#conferma">Ci sarai? <span aria-hidden="true">→</span></a>
+      <button class="copy-button" id="copy-invitation" type="button">Copia i dettagli dell'invito</button>
+      <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+
+      <p class="closing">Non vedo l'ora di festeggiare con te <span aria-hidden="true">♥</span></p>
+      <span class="corner corner-top-left" aria-hidden="true"></span>
+      <span class="corner corner-top-right" aria-hidden="true"></span>
+      <span class="corner corner-bottom-left" aria-hidden="true"></span>
+      <span class="corner corner-bottom-right" aria-hidden="true"></span>
+    </section>
+
+    <section class="rsvp-section" id="conferma" aria-labelledby="rsvp-title">
+      <p class="eyebrow">UN PICCOLO FAVORE</p>
+      <h2 id="rsvp-title">Fammi sapere</h2>
+      <p class="rsvp-intro">Scegli una risposta per farci sapere.</p>
+      <form id="rsvp-form">
+        <label for="attendance">Ci sarai?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="Sì, ci sarò!">Sì, ci sarò!</option>
+          <option value="Mi dispiace, non potrò esserci">Mi dispiace, non potrò esserci</option>
+        </select>
+        <button class="rsvp-button form-button" type="submit">Prepara la risposta <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    </div>
+  </main>
+</body>
+</html>
