@@ -18,7 +18,7 @@ openInvitationButton.addEventListener("click", () => {
     envelopeScreen.setAttribute("aria-hidden", "true");
     invitationContent.removeAttribute("aria-hidden");
     invitationContent.classList.add("is-visible");
-  }, 450);
+  }, 650);
 });
 
 copyButton.addEventListener("click", async () => {
@@ -39,15 +39,15 @@ copyButton.addEventListener("click", async () => {
 
 rsvpForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  formStatus.textContent = "";
-
-  if (!RSVP_EMAIL) {
-    formStatus.textContent = "Per attivare le conferme, inserisci il tuo indirizzo email nella variabile RSVP_EMAIL in script.js.";
-    return;
-  }
 
   const formData = new FormData(rsvpForm);
   const attendance = formData.get("attendance").toString();
+  formStatus.textContent = attendance === "Sì, ci sarò!"
+    ? "Grazie per la risposta! Jamaica ti aspetta con gioia ♥"
+    : "Grazie per avermelo fatto sapere! ♥";
+
+  if (!RSVP_EMAIL) return;
+
   const subject = encodeURIComponent("Conferma invito alla laurea");
   const body = encodeURIComponent(attendance);
   window.location.href = `mailto:${RSVP_EMAIL}?subject=${subject}&body=${body}`;

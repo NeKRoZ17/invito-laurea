@@ -36,7 +36,7 @@ main { width: min(100%, 760px); margin: 0 auto; }
   justify-items: center;
   align-content: center;
   text-align: center;
-  transition: opacity 450ms ease, transform 450ms ease;
+  transition: opacity 650ms ease, transform 650ms ease;
 }
 
 .envelope-screen.is-opening { opacity: 0; transform: translateY(-12px); }
@@ -60,11 +60,11 @@ main { width: min(100%, 760px); margin: 0 auto; }
 .envelope-letter {
   position: absolute;
   z-index: 1;
-  top: 10px;
+  top: 25%;
   left: 10%;
   display: grid;
   width: 80%;
-  height: 85%;
+  height: 72%;
   align-content: center;
   justify-items: center;
   gap: 5px;
@@ -177,7 +177,7 @@ main { width: min(100%, 760px); margin: 0 auto; }
 }
 
 .laurel svg { width: 74px; height: 100px; }
-.laurel path { stroke: currentColor; stroke-width: 1.15; stroke-linecap: round; stroke-linejoin: round; }
+.laurel path { stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
 
 .eyebrow {
   margin: 20px 0 10px;
@@ -214,8 +214,8 @@ h1 span { font-style: italic; }
 .gold-divider i { width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg); }
 
 .graduate-photo {
-  width: 160px;
-  height: 190px;
+  width: 195px;
+  height: 235px;
   margin: 0 auto 17px;
   padding: 5px;
   background: #fffdf9;
@@ -254,7 +254,28 @@ h1 span { font-style: italic; }
 .detail-label { color: var(--gold); font-size: 9px; font-weight: 700; letter-spacing: .19em; }
 .detail-value { font-family: "Playfair Display", Georgia, serif; font-size: 19px; }
 .detail-note { color: var(--muted); font-size: 12px; }
+.time-highlight {
+  margin-top: 2px;
+  padding: 5px 12px;
+  color: var(--wine);
+  background: #f5e9e3;
+  border: 1px solid #e8d1c6;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
 .detail-separator { height: 72px; background: var(--line); }
+
+.photo-invite {
+  margin: 20px auto 0;
+  padding: 16px 18px;
+  background: #faf4ef;
+  border: 1px solid #eadbd0;
+}
+
+.photo-invite p { margin: 0 0 9px; color: var(--ink); font-size: 13px; line-height: 1.6; }
+.photo-invite a { color: var(--wine); font-size: 13px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.photo-invite a:focus-visible { outline: 3px solid #d5b77f; outline-offset: 3px; }
 
 .rsvp-button {
   display: inline-flex;
@@ -364,7 +385,8 @@ footer span { color: var(--wine); }
   .event-details { gap: 12px; padding: 19px 0; }
   .detail-value { font-size: 16px; }
   .detail-note { font-size: 10px; }
-  .graduate-photo { width: 145px; height: 175px; }
+  .time-highlight { font-size: 13px; }
+  .graduate-photo { width: 175px; height: 215px; }
   .rsvp-section { margin-top: 30px; padding: 29px 23px 23px; }
 }
 
