@@ -287,13 +287,9 @@ body {
 }
 
 .foto {
-  width: 195px;
-  height: 235px;
+  width: 220px;
+  height: 270px;
   margin: 0 auto 17px;
-  padding: 5px;
-  background: var(--colore-carta);
-  border: 1px solid #d8c39f;
-  box-shadow: 0 7px 20px rgb(65 45 37 / 10%);
 }
 
 .foto__immagine {
@@ -622,8 +618,8 @@ body {
   }
 
   .foto {
-    width: 175px;
-    height: 215px;
+    width: 195px;
+    height: 240px;
   }
 
   .risposta {
